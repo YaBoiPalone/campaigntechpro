@@ -3885,3 +3885,35 @@ textarea.form__input {
     border-color: var(--accent-orange);
   }
 }
+
+@media (max-width: 768px) {
+  .servicesgrid {
+    display: block; /* Switch to vertical stacking on mobile */
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .servicecard {
+    width: 100% !important;
+    min-height: auto; /* Allow flexible height */
+    margin-bottom: 2rem;
+  }
+  .serviceimg {
+    height: 180px; /* Adjust image height for mobile */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .servicecard:hover .serviceimg {
+    transform: scale(1.05);
+  }
+  .servicecontent {
+    padding: 1.5rem 1rem;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-dark);
+  }
+}
+
+
